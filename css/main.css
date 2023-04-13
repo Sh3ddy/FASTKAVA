@@ -35,6 +35,21 @@ span {
   margin-left: auto;
 }
 
+input::-webkit-input-placeholder { /* для Chrome, Firefox, Opera, Safari */
+  color: white;
+}
+
+input::-moz-placeholder { /* для Firefox */
+  color: white;
+}
+
+input:-ms-input-placeholder { /* для IE 10+ */
+  color: white;
+}
+
+input:-moz-placeholder { /* для Mozilla Firefox 4 до 18 */
+  color: white;
+}
 @media only screen and (max-width: 767px) {
   .slider-container {
     height: 375px;
