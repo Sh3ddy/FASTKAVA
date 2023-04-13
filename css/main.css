@@ -9,6 +9,7 @@ html {
 body {
   background: #1e1e1e;
   margin: 0px;
+  overflow-x: hidden
 }
 :root {
   --white-color: #ffffff;
@@ -39,10 +40,13 @@ span {
     height: 375px;
     width: 255px;
     top: 11px;
-    left: 9px;
-        overflow: hidden;
-        z-index: -1;
-        position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+    position: absolute;
   }
   
   .slider {
@@ -79,6 +83,7 @@ span {
     width: 270px;
     position: relative;
     display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
   }
@@ -125,7 +130,7 @@ span {
     display: flex;
     position: fixed;
     top: 80%;
-    right: 5%;
+    right: 8%;
     z-index: 9999;
   }
 
@@ -478,6 +483,7 @@ span {
     font-weight: 700;
     line-height: 1.25;
     letter-spacing: 0.2em;
+    margin-top: 40px;
     margin-right: 10px;
 
     color: var(--white-color);
@@ -660,17 +666,17 @@ span {
   }
   .about_slider {
     display: flex;
-    width: 100%;
+    width: 85%;
     position: relative;
     align-items: center;
-    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .about_slider i {
-    margin: -50px;
-    top: 200px;
-    height: 44px;
-    width: 44px;
+    top: 250px;
+    height: 30px;
+    width: 30px;
     color: #343f4f;
     cursor: pointer;
     font-size: 1.15rem;
@@ -684,38 +690,35 @@ span {
     border-radius: 0%;
     transform: rotate(45deg);
     transition: transform 0.1s linear;
-    display: none;
+
   }
 
   .about_slider i:active {
     transform: rotate(50deg) scale(0.9);
-    display: none;
+
   }
 
   .about_slider i:first-child {
-    left: -22px;
-    display: none;
-    display: none;
+    left: -32px;
+
   }
 
   .about_slider i:last-child {
-    right: -22px;
-    display: none;
+    right: -32px;
   }
 
-  .about_slider-vectoL {
+  .about_slider-vectorL {
     transform: rotate(133deg);
-    margin: 9px 34px 8px 15px;
+    margin: 5px 7px 1px 8px;
     justify-content: center;
     display: flex;
-    display: none;
   }
 
   .about_slider-vectorR {
     display: flex;
-    margin: 7px 0px 0px 15px;
+    margin: 1px 0px 0px 9px;
+    width: 15px;
     transform: rotate(-47deg);
-    display: none;
   }
 
   .about_slider .carousel {
@@ -845,11 +848,15 @@ span {
 
   .steps_list-item {
     width: 100%;
-    margin: 10px;
+    margin: 20px;
   }
 
   .steps_img {
     position: relative;
+    max-width: 500px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .steps_list-item-subtitle {
@@ -883,8 +890,8 @@ span {
     border: 3px solid rgba(255, 138, 0, 1);
     color: #ffffff;
     width: 85%;
-    height: 300px;
-    margin-bottom: 300px;
+    height: 352px;
+    margin-bottom: 330px;
     position: relative;
   }
 
@@ -914,13 +921,15 @@ span {
   .calc_profit {
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.25;
     letter-spacing: 0.4em;
     width: 100%;
     text-align: center;
     display: flex;
     color: var(--white-color);
+    padding-top: 10px;
+    margin-left: 13px;
   }
   .calc_title {
     text-align: center;
@@ -941,7 +950,7 @@ span {
     font-size: 17px;
     position: absolute;
     font-weight: 500;
-
+    top: -25px;
     width: 100%;
   }
 
@@ -962,7 +971,7 @@ span {
   }
 
   .calc_options {
-    padding: 30px 0 35px 0;
+    padding: 40px 0 0px 0;
   }
 
   .calc_cafes {
@@ -970,6 +979,7 @@ span {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
   }
 
   .calc_drinks {
@@ -977,6 +987,7 @@ span {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
   }
 
   .calc_months {
@@ -984,6 +995,7 @@ span {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
   }
   .calc_inp {
     border: none;
@@ -1001,10 +1013,13 @@ span {
     background: none;
     font-style: normal;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 27px;
     line-height: 125%;
     letter-spacing: 0.1em;
     padding: 10px;
+    display: flex;
+    margin-left: auto;
+    width: 150px;
   }
   .calc_span {
     /* transition: 0.1s ease; */
@@ -1020,7 +1035,7 @@ span {
     align-items: center;
     width: 10%;
     position: absolute;
-    top: 20px;
+    top: 15px;
     left: 10px;
     transform: translateX(-11px);
   }
@@ -1043,6 +1058,8 @@ span {
     -webkit-appearance: none;
     background: none;
     width: 100%;
+    display: flex;
+    align-items: center;
   }
   input[type="range"]:focus {
     outline: none;
@@ -1062,6 +1079,7 @@ span {
     border: 1px solid #ffffff;
     height: 26px;
     width: 26px;
+    transform: translateY(-30%);
     border-radius: 15px;
     background: #ffffff;
     cursor: pointer;
@@ -1085,6 +1103,7 @@ span {
     border: 1px solid #ffffff;
     height: 26px;
     width: 26px;
+    transform: translateY(-30%);
     border-radius: 15px;
     background: #ffffff;
     cursor: pointer;
@@ -1116,6 +1135,7 @@ span {
     border: 1px solid #ffffff;
     height: 26px;
     width: 26px;
+    transform: translateY(-30%);
     border-radius: 15px;
     background: #ffffff;
     cursor: pointer;
@@ -1515,6 +1535,7 @@ span {
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -2208,14 +2229,14 @@ span {
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 80%;
   }
 
   .about_slider i {
     margin: -50px;
-    top: 200px;
-    height: 44px;
-    width: 44px;
+    top: 290px;
+    height: 35px;
+    width: 35px;
     color: #343f4f;
     cursor: pointer;
     font-size: 1.15rem;
@@ -2243,17 +2264,19 @@ span {
     right: -22px;
   }
 
-  .about_slider-vectoL {
+  .about_slider-vectorL {
     transform: rotate(133deg);
-    margin: 9px 34px 8px 15px;
+    margin: 7px 0px 0px 9px;
+    width: 15px;
     justify-content: center;
     display: flex;
   }
 
   .about_slider-vectorR {
     display: flex;
-    margin: 7px 0px 0px 15px;
+    margin: 3px 0px 0px 11px;
     transform: rotate(-47deg);
+    width: 15px;
   }
 
   .about_slider .carousel {
@@ -2435,7 +2458,7 @@ span {
     color: #ffffff;
     padding: 40px;
     text-align: center;
-    width: 90%;
+    width: 88%;
     margin: 0 auto;
     position: relative;
   }
@@ -2459,19 +2482,14 @@ span {
   .calc_profit {
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 23px;
     line-height: 1.25;
     letter-spacing: 0.4em;
-    margin: 1px;
-
-    width: 220px;
-
+    width: 300px;
     text-align: center;
     display: flex;
     color: var(--white-color);
-    margin-left: 30px;
-
-    /* padding: 20px; */
+    margin-left: -95px;
   }
   .calc_title {
     text-align: center;
@@ -2524,6 +2542,11 @@ span {
     margin: 75px 0 75px 0;
   }
 
+  .propers {
+    display: inline-flex;
+    align-items: center;
+  }
+
   .calc_cafes {
     position: relative;
     margin: 30px;
@@ -2561,10 +2584,11 @@ span {
     background: none;
     font-style: normal;
     font-weight: 600;
-    font-size: 23px;
+    font-size: 27px;
     line-height: 125%;
+    width: 145px;
     letter-spacing: 0.1em;
-    padding: 20px 0px 20px 131px;
+    padding: 20px 0px 20px 84px;
   }
   .calc_span {
     /* transition: 0.1s ease; */
@@ -3054,7 +3078,7 @@ span {
   }
 
   .watch_gradient {
-    display: inline-block;
+    display: none;
     background: radial-gradient(
       50% 50% at 50% 50%,
       #ff8a00 -100%,
@@ -3209,12 +3233,17 @@ span {
 }
 
 @media only screen and (min-width: 992px) {
+  .test {
+    position: relative;
+  }
   .slider-container {
-
-    height: 550px;
-    width: 354px;
-    top: 27px;
+    position: absolute;
+    height: 558px;
+    width: 263px;
+    top: 13px;
+    right: 69px;
     overflow: hidden;
+    z-index: 1;
   }
   
   .slider {
@@ -3737,7 +3766,7 @@ span {
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 80%;
   }
 
   .about_slider i {
@@ -3772,17 +3801,19 @@ span {
     right: -22px;
   }
 
-  .about_slider-vectoL {
+  .about_slider-vectorL {
     transform: rotate(133deg);
-    margin: 9px 34px 8px 15px;
+    margin: 12px 0px 0px 12px;
+    width: 15px;
     justify-content: center;
     display: flex;
   }
 
   .about_slider-vectorR {
     display: flex;
-    margin: 7px 0px 0px 15px;
+    margin: 8px 0px 0px 16px;
     transform: rotate(-47deg);
+    width: 15px;
   }
 
   .about_slider .carousel {
@@ -3998,7 +4029,7 @@ span {
   .calc_profit {
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 21px;
     line-height: 1.25;
     letter-spacing: 0.4em;
     margin: 1px;
@@ -4096,10 +4127,10 @@ span {
     background: none;
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 23px;
     line-height: 125%;
     letter-spacing: 0.1em;
-    padding: 2px 0px 0px 63px;
+    padding: 2px 0px 0px 128px;
   }
   .calc_span {
     /* transition: 0.1s ease; */
@@ -4866,13 +4897,6 @@ span {
 }
 
 
-.test {
-  width: 400px;
-  position: relative;
+#nav5 {
+  transition-duration: 0.5s; /* анимация длится 0.5 секунды */
 }
-
-/* .slider-container {
-  width: 255px;
-  top: 11px;
-  left: 9px;
-} */
