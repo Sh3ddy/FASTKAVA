@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>FASTKAVA</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!-- <nav>
+        <div class="burger-menu" id="open-dropdown">
+          <div class="burger-menu-line"></div>
+          <div class="burger-menu-line"></div>
+          <div class="burger-menu-line"></div>
+        </div>
+        <ul class="dropdown-menu" id="dropdown">
+          <div class="dropdown-menu-header">
+            <div class="dropdown-menu-close" id="close-dropdown">&times;</div>
+          </div>
+          <li><a href="#nav1">Послуги</a></li>
+          <li><a href="#nav2">Галерея</a></li>
+          <li><a href="#nav3">5 Кроків</a></li>
+          <li><a href="#nav4">Прибуток</a></li>
+          <li><a href="#nav5">Контакти</a></li>
+        </ul>
+      </nav> -->
+      <ul class="header__list">
+        <li class="header__list-item">
+          <a href="#nav1" class="nav">Послуги</a>
+        </li>
+        <li class="header__list-item">
+          <a href="#nav2" class="nav">Галерея</a>
+        </li>
+        <li class="header__list-items">
+          <a href="#nav3" class="nav-tip">5 Кроків</a>
+        </li>
+        <li class="header__list-item">
+          <a href="#nav4" class="nav">Прибуток</a>
+        </li>
+        <li class="header__list-item">
+          <a href="#nav5" class="nav">Контакти</a>
+        </li>
+      </ul>
+      <div class="gradient"></div>
+    </header>
+
+    <!-- секция hero -->
+
+    <hero class="container hero">
+      <h1 class="hero_title">
+        Стань власником <br />
+        кав'ярні
+      </h1>
+      <p class="hero_item-big">
+        Відкрий кав'ярню самообслуговування <br />та заробляй від 10 000 грн<br />пасивно
+        з однієї точки
+      </p>
+      <p class="hero_item-small">
+        Залиш заявку прямо зараз та <br />отримай доступ до презентації<br />
+        та фін. моделі
+      </p>
+      <a href="#nav5" class="hero_button">Отримати доступ</a>
+      <div class="hero_cup">
+        <img
+          src="./img/Group 151.png"
+          alt=""
+          class="hero_cup-img"
+          width="100%"
+        />
+      </div>
+      <img
+        class="hero_grains"
+        src="./img/zerna-levo.png"
+        alt="кофейный автомат"
+        width="100%"
+      />
+    </hero>
+    <div class="wrap">
+      <!-- кнопка обратного звонка -->
+      <a href="tel: +380634599702">
+        <div class="btn-phone-wrap">
+          <div class="btn-phone">
+            <div class="btn-phone-circle"></div>
+          </div>
+          <div class="btn-phone-circle2"></div>
+        </div>
+      </a>
+    </div>
+    <!-- СЕКЦИЯ ЗВОНОК -->
+
+    <!-- СЕКЦИЯ Circle -->
+
+    <section class="circle container">
+      <h2 class="title-card">Кав’ярні <span>FastKava</span> - це</h2>
+      <!-- 1 -->
+      <div class="privilege">
+        <div class="card">
+          <img class="card-img" src="./img/Group 138.png" alt="" />
+        </div>
+
+        <!-- 2 -->
+        <div class="card">
+          <img class="card-img" src="./img/Group 139.png" alt="" />
+        </div>
+
+        <!-- 3 -->
+        <div class="card">
+          <img class="card-img" src="./img/Group 140.png" alt="" />
+        </div>
+        <!-- 4 -->
+        <div class="card">
+          <img class="card-img" src="./img/Group 141.png" alt="" />
+        </div>
+        <!-- 5 -->
+        <div class="card">
+          <img class="card-img" src="./img/Group 142.png" alt="" />
+        </div>
+        <!-- 6 -->
+        <div class="card">
+          <img class="card-img" src="./img/Group 143.png" alt="" />
+        </div>
+      </div>
+      <div class="hero_gradient"></div>
+    </section>
+
+    <!-- секция автомат -->
+
+    <section class="machine">
+      <img
+        class="machine_img"
+        src="./img/Group 149.png"
+        alt="кофейный автомат"
+        width="100%"
+      />
+      <img
+        class="machine_grains"
+        src="./img/zerna-levo.png"
+        alt="кофейный автомат"
+        width="100%"
+      />
+      <div class="machine_gradient"></div>
+    </section>
+    <section class="about container">
+      <div class="about_slider">
+        <i id="left" class="fa-solid fa-angle-left">
+          <img
+            class="about_slider-vectorL"
+            src="/img/Vector.png"
+            alt="cтрелочка"
+            width="15px"
+            draggable="false"
+            style="
+              transform: rotate(133deg);
+              margin: 9px 34px 8px 15px;
+              justify-content: center;
+              display: flex;
+            "
+          />
+        </i>
+
+        <!-- Галерея фото -->
+
+        <div id="nav2" class="carousel">
+          <img
+            src="./img/company-name.png"
+            alt="экран"
+            width="100%"
+            draggable="false"
+          />
+          <img
+            src="./img/payment.png"
+            alt="экран"
+            width="100px"
+            draggable="false"
+          />
+          <img src="./img/menu.png" alt="экран" draggable="false" />
+          <img src="./img/machine.png" alt="экран" draggable="false" />
+          <img src="./img/cups.png" alt="экран" draggable="false" />
+          <img src="./img/drink-coffee.png" alt="экран" draggable="false" />
+        </div>
+        <i id="right" class="fa-solid fa-angle-right">
+          <img
+            class="about_slider-vectorR"
+            src="./img/Vector.png"
+            alt="cтрелочка"
+            width="15px"
+            draggable="false"
+          />
+        </i>
+      </div>
+
+      <!-- КОФЕЙНЯ В смартфоне -->
+
+      <div class="app">
+        <h2 class="app_title"><span>Кав’ярня</span> у смартфоні</h2>
+        <div class="app_wrapper">
+          <div class="app_img">
+            <div class="test">
+              <img
+                class="iphone"
+                src="./img/iphonexs.png"
+                alt="программа на смартфоне"
+                width="100%"
+              />
+              <div class="slider-container">
+                <ul class="slider">
+                  <li><img src="/img/midl-1.png" alt="Photo 1 " /></li>
+                  <li><img src="/img/midl-2.png" alt="Photo 2" /></li>
+                  <li><img src="/img/midl-3.png" alt="Photo 3" /></li>
+                  <li><img src="/img/midl-4.png" alt="Photo 4" /></li>
+                  <li><img src="/img/midl-1.png" alt="Photo 1 " /></li>
+                  <li><img src="/img/midl-2.png" alt="Photo 2" /></li>
+                  <li><img src="/img/midl-3.png" alt="Photo 3" /></li>
+                  <li><img src="/img/midl-4.png" alt="Photo 4" /></li>
+                  <li><img src="/img/midl-1.png" alt="Photo 1 " /></li>
+                  <li><img src="/img/midl-2.png" alt="Photo 2" /></li>
+                  <li><img src="/img/midl-3.png" alt="Photo 3" /></li>
+                  <li><img src="/img/midl-4.png" alt="Photo 4" /></li>
+                  <li><img src="/img/midl-1.png" alt="Photo 1 " /></li>
+                  <li><img src="/img/midl-2.png" alt="Photo 2" /></li>
+                  <li><img src="/img/midl-3.png" alt="Photo 3" /></li>
+                  <li><img src="/img/midl-4.png" alt="Photo 4" /></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="app_gradient"></div>
+          <div>
+            <ul class="app_list">
+              <li class="app_text">
+                <p>
+                  За допомогою CRM системи, яку ми також надаємо, можна
+                  відслідковувати показники кав'ярні з будь-якої точки світу та
+                  з будь-якого пристрою в режимі online. Контроль наявності
+                  компонентів, продажу, виручки та багато іншого.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- СЕКЦИЯ 5 ШАГОВ  -->
+
+    <section id="nav3" class="steps container">
+      <h2 class="steps_title">Прості кроки із запуску <span>кав'ярні</span></h2>
+
+      <ul class="steps_list">
+        <li class="steps_list-item">
+          <img
+            class="steps_img"
+            src="./img/Group 117.png"
+            alt="number one"
+            width="100%"
+          />
+        </li>
+        <li class="steps_list-item">
+          <img
+            class="steps_img"
+            src="./img/Group 116.png"
+            alt="number two"
+            width="100%"
+          />
+        </li>
+        <li class="steps_list-item">
+          <img
+            class="steps_img"
+            src="./img/Group 114.png"
+            alt="number three"
+            width="100%"
+          />
+        </li>
+        <li class="steps_list-item">
+          <img
+            class="steps_img"
+            src="./img/Group 113.png"
+            alt="number four"
+            width="100%"
+          />
+        </li>
+        <li class="steps_list-item">
+          <img
+            class="steps_img"
+            src="./img/Group 115.png"
+            alt="number five"
+            width="100%"
+          />
+        </li>
+      </ul>
+      <div class="steps_gradient"></div>
+    </section>
+
+    <!-- СЕКЦИЯ Калькулятор -->
+    <div id="nav4">
+      <h2 class="calc_title">
+        Калькулятор
+        <span> прибутку </span>
+      </h2>
+    </div>
+    <section class="calc container">
+      <div class="calc_options">
+        <div class="calc_cafes">
+          <label class="calc_subtitle" for="cafes"
+            >Обери кількість кав’ярень</label
+          >
+          <span class="calc_span" id="cafesValue">1</span><br /><br />
+          <input
+            class="calc_range"
+            type="range"
+            id="cafes"
+            name="cafes"
+            min="1"
+            max="10"
+            value="1"
+            oninput="updateCafes(); calculateProfit()"
+          /><br />
+        </div>
+        <div class="calc_drinks">
+          <label class="calc_subtitle" for="drinks"
+            >Обери кількість напоїв в день</label
+          >
+          <span class="calc_span" id="drinksValue">10</span><br /><br />
+          <input
+            class="calc_range"
+            type="range"
+            id="drinks"
+            name="drinks"
+            min="10"
+            max="150"
+            value="10"
+            oninput="updateDrinks(); calculateProfit()"
+          /><br />
+        </div>
+        <div class="calc_months">
+          <label class="calc_subtitle" for="months"
+            >Обери кількість місяців</label
+          >
+          <span class="calc_span" id="monthsValue">1</span><br /><br />
+          <input
+            class="calc_range"
+            type="range"
+            id="months"
+            name="months"
+            min="1"
+            max="12"
+            value="1"
+            oninput="updateMonths(); calculateProfit()"
+          /><br />
+        </div>
+      </div>
+      <div class="calc_summary">
+        <div class="flex">
+          <label class="calc_expense" for="expense">Продукти:</label>
+
+          <input
+            class="calc_inp"
+            type="text"
+            id="expense"
+            name="expense"
+            disabled
+          />
+        </div>
+        <div class="flex">
+          <label class="calc_expense">Оренда:</label>
+
+          <input
+            class="calc_inp"
+            type="text"
+            id="expense1"
+            name="expense1"
+            disabled
+          />
+        </div>
+        <div class="flex">
+          <label class="calc_expense">Вандалізм:</label>
+
+          <input
+            class="calc_inp"
+            type="text"
+            id="expense2"
+            name="expense2"
+            disabled
+          />
+        </div>
+
+        <div class="flex">
+          <label class="calc_expense">Інше:</label>
+          <input
+            class="calc_inp"
+            type="text"
+            id="expense3"
+            name="expense3"
+            disabled
+          />
+        </div>
+
+        <div class="propers">
+          <label class="calc_profit" for="profit"
+            >Чистий <span>прибуток</span> :</label
+          >
+
+          <input
+            class="calc_inp2"
+            type="text"
+            id="profit"
+            name="profit"
+            disabled
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- СЕКЦИЯ ПАКЕТИ ПАРТНЕРСТВА -->
+
+    <section id="nav1" class="partnership container">
+      <div class="partnership_gradient"></div>
+      <h2 class="partnership_title">Пакети партнерства</h2>
+      <p class="partnership_subtitle">
+        Виберіть свій найкращий варіант партнерства з нами
+      </p>
+
+      <div class="partnership_card-list">
+        <div class="partnership_card" id="open-modal-btn">
+          <div class="partnership_card-info">
+            <h3 class="partnership_card-title">Формат</h3>
+            <h3 class="partnership_card-subtitle">Внутрішній</h3>
+          </div>
+          <img
+            class="partnership_card-img"
+            src="./img/prem.png"
+            alt="автомат"
+            width="100%"
+            draggable="false"
+          />
+          <div class="partnership_card-bottom">
+            <img
+              class="partnership_card-vector"
+              src="./img/vector2.png"
+              alt="cтрелочка"
+              width="100%"
+              draggable="false"
+            />
+            <p class="partnership_card-price">5000$</p>
+          </div>
+        </div>
+
+        <div class="partnership_card" id="open-modal-btn3">
+          <div class="partnership_card-info">
+            <h3 class="partnership_card-title">Формат</h3>
+            <h3 class="partnership_card-subtitle">Вуличний</h3>
+          </div>
+          <img
+            class="partnership_card-img"
+            src="./img/street.png"
+            alt="автомат"
+            width="100%"
+            draggable="false"
+          />
+          <div class="partnership_card-bottom">
+            <img
+              class="partnership_card-vector"
+              src="./img/vector2.png"
+              alt="cтрелочка"
+              width="100%"
+              draggable="false"
+            />
+            <p class="partnership_card-price">7000$</p>
+          </div>
+        </div>
+      </div>
+      <a href="#nav5" class="partnership_button">Стати партнером</a>
+
+      <!-- БЕГУЩАЯ СТРОКА -->
+
+      <div id="modal" class="backdrop">
+      <div  class="modal">
+        <button data-close-button class="close-button">&times;</button>
+
+        <div class="flex_top-button">
+          <button class="standarts_button" id="standard-button">
+            Стандарт
+          </button>
+          <button class="standarts_button" id="premium-button">Преміум</button>
+        </div>
+
+        <div class="flex_bottom-button">
+          <button class="size_button" id="small-button">Маленький</button>
+          <button class="size_button" id="medium-button">Середній</button>
+          <button class="size_button" id="large-button">Великий</button>
+        </div>
+        <div class="flex_modals">
+          <img class="img_card" id="image" src="" />
+          <p class="text_modals" id="info"></p>
+        </div>
+        <h3 class="price_modals">Вартість: <span id="price-tag"></span></h3>
+        <a class="navigation5" href="#nav5">
+          <button id="overlay" class="perm_button">
+            Cтати Партнером
+          </button></a
+        >
+      </div>
+    </div>
+    <div id="modal-choose" class="backdrop">
+      <div  class="modal">
+        <button data-close-button class="close-button" id="close-choose">
+          &times;
+        </button>
+
+        <div class="flex_top-button">
+          <button class="standarts_button" id="standard-button2">
+            Стандарт
+          </button>
+          <button class="standarts_button" id="premium-button2">Преміум</button>
+        </div>
+
+        <div class="flex_bottom-button">
+          <button class="size_button" id="small-button2">Маленький</button>
+          <button class="size_button" id="medium-button2">Середній</button>
+          <button class="size_button" id="large-button2">Великий</button>
+        </div>
+        <div class="flex_modals">
+          <img class="img_card" id="image2" src="" />
+          <p class="text_modals" id="info-text"></p>
+        </div>
+        <h3 class="price_modals">Вартість: <span id="price-tag2"></span></h3>
+        <a class="navigation5" href="#nav5">
+        <button id="overlay2" class="perm_button">
+          Cтати Партнером
+        </button>
+      </a>
+      </div>
+    </div>
+    </section>
+
+    <div class="partnership_line"></div>
+
+    <marquee behavior="alternate" class="partnership_marque"
+      >FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA
+      FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA
+      FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA
+      FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA
+      FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA
+      FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA
+      FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA
+      FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA
+      FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA FASTKAVA
+      FASTKAVA FASTKAVA FASTKAVA</marquee
+    >
+    <div class="partnership_line"></div>
+    <!-- СЕЦИЯ ВИДЕО -->
+
+    <section class="watch container">
+      <div class="watch_list">
+        <div class="watch_gradient"></div>
+        <h2 class="watch_title">Подивись <span> відео </span> як це працює</h2>
+        <!-- <img class="watch_img" src="./img/watch1.png" alt="video" /> -->
+
+        <iframe
+          class="watch_img"
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/ws80iGEDv6Q"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <div class="watch_line"></div>
+        <iframe
+          class="watch_img"
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/0LJcKs2G17w"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <div class="watch_line"></div>
+        <iframe
+          class="watch_img"
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/vQaDmADaE4o"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <div class="watch_line"></div>
+      </div>
+
+      <!-- СЕКЦИЯ ЛОГО ПАРТНЕРОВ -->
+
+      <div class="partners">
+        <div class="partners_gradient"></div>
+        <h2 class="partners_title">Наші партнери</h2>
+        <div class="partners_list">
+          <img
+            class="partners_img"
+            src="./img/logos/rozetka.png"
+            alt="partners"
+          />
+          <img
+            class="partners_img"
+            src="./img/logos/sportlife.png"
+            alt="partners"
+            width=""
+          />
+          <img
+            class="partners_img"
+            src="./img/logos/alladin.png"
+            alt="partners"
+          />
+          <img
+            class="partners_img"
+            src="./img/logos/smartplaza.png"
+            alt="partners"
+          />
+          <img
+            class="partners_img"
+            src="./img/logos/novaposhta.png"
+            alt="partners"
+          />
+          <img
+            class="partners_img"
+            src="./img/logos/arkadia.png"
+            alt="partners"
+          />
+
+          <img
+            class="partners_img"
+            src="./img/logos/insilver.png"
+            alt="partners"
+          />
+
+          <img
+            class="partners_img"
+            src="./img/logos/ekomarket.png"
+            alt="partners"
+          />
+
+          <img
+            class="partners_img"
+            src="./img/logos/newway.png"
+            alt="partners"
+          />
+
+          <img class="partners_img" src="./img/logos/hit.png" alt="partners" />
+
+          <img
+            class="partners_img"
+            src="./img/logos/kvadrat.png"
+            alt="partners"
+          />
+
+          <img
+            class="partners_img"
+            src="./img/logos/adonis.png"
+            alt="partners"
+          />
+
+          <img class="partners_img" src="./img/logos/spar.png" alt="partners" />
+
+          <img
+            class="partners_img"
+            src="./img/logos/atletico.png"
+            alt="partners"
+          />
+
+          <img
+            class="partners_img"
+            src="./img/logos/sportland.png"
+            alt="partners"
+          />
+
+          <img
+            class="partners_img"
+            src="./img/logos/luxwash.png"
+            alt="partners"
+          />
+
+          <img
+            class="partners_img"
+            src="./img/logos/ashan.png"
+            alt="partners"
+          />
+
+          <img
+            class="partners_img"
+            src="./img/logos/2steps.png"
+            alt="partners"
+          />
+          <img
+          class="partners_img"
+          src="./img/sana.png"
+          alt="partners"
+        />
+        <img
+        class="partners_img"
+        src="./img/medical.png"
+        alt="partners"
+      />
+        </div>
+      </div>
+    </section>
+    <footer id="nav5" class="footer container">
+      <div class="footer_list">
+        <div class="footer_flex">
+          <div class="footer_contacts">
+            <div class="footer_title">
+              <svg class="footer_svg">
+                <use
+                  class="footer_svg-icon"
+                  href="./img/svg/symbol-defs.svg#icon-phone"
+                ></use>
+              </svg>
+              <h2 class="footer_subtitle">ЗАТЕЛЕФОНУЙТЕ НАМ</h2>
+            </div>
+            <a class="footer_link" href="tel:+(380) 634-59-9702"
+              >+(380) 634-59-9702</a
+            >
+          </div>
+          <div class="footer_contacts">
+            <div class="footer_title">
+              <svg class="footer_svg">
+                <use
+                  class="footer_svg-icon"
+                  href="./img/svg/symbol-defs.svg#icon-mail"
+                ></use>
+              </svg>
+              <h2 class="footer_subtitle">ПОШТА</h2>
+            </div>
+            <a class="footer_link" href="mailto:Fastkavaua@gmail.com"
+              >Fastkavaua@gmail.com</a
+            >
+          </div>
+          <div class="footer_contacts">
+            <div class="footer_title">
+              <svg class="footer_svg">
+                <use
+                  class="footer_svg-icon"
+                  href="./img/svg/symbol-defs.svg#icon-location"
+                ></use>
+              </svg>
+              <h2 class="footer_subtitle">МІСЦЕ РОСТАШУВАННЯ</h2>
+            </div>
+            <a class="footer_link" href="https://goo.gl/maps/yLn5fd2GQMoPEn5NA"
+              >Україна, м. Київ, вул. Дніпровська набережна, 26ж</a
+            >
+          </div>
+        </div>
+        <div class="footer_form">
+          <h2 class="footer_form-title">Залишити заявку</h2>
+          <form>
+            <input
+              class="footer_form-input"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="ІМ'Я"
+            /><br />
+
+            <input
+              class="footer_form-input"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="ТЕЛЕФОН"
+            /><br />
+
+            <input
+              class="footer_form-input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="EMAIL"
+            /><br />
+
+            <input class="footer_form-button" type="submit" value="Надіслати" />
+          </form>
+        </div>
+      </div>
+
+      <div class="networks">
+        <div class="networks_svg">
+          <a href="http://t.me/fastkavaua"
+            ><img src="./img/tg.svg" alt="" width="50px"
+          /></a>
+        </div>
+
+        <div class="networks_svg">
+          <a href="https://www.instagram.com/fastkava_ua/"
+            ><img src="./img/inst.svg" alt="" width="50px"
+          /></a>
+        </div>
+
+        <div class="networks_svg">
+          <a href="https://www.facebook.com/profile.php?id=100087258138680"
+            ><img src="./img/facebook.svg" alt="" width="50px"
+          /></a>
+        </div>
+
+        <div class="networks_svg">
+          <a href="https://wa.me/+380634599702"
+            ><img src="./img/whatsapp.svg" alt="" width="50px"
+          /></a>
+        </div>
+
+        <div class="networks_svg">
+          <a href="https://www.youtube.com/@fastkavaukraine/videos"
+            ><img src="./img/youtube.svg" alt="" width="50px"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/modal.js?ver=0.001"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/calculator.js"></script>
+    <script src="./js/card.js"></script>
+    <script src="./js/dropdown.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
