@@ -174,6 +174,7 @@ closeModalButtons.addEventListener("click", () => {
 closeChooseModalButtons.addEventListener("click", () => {
   // const modal = button.closest('.modal');
   // closeModal(modal);
+  medium = false;
   closeModal(modalChoose);
 });
 
@@ -481,7 +482,7 @@ function closeModal(modal) {
   largeButton2.style.background = "";
   mediumButton.style.background = "";
   largeButton.style.background = "";
-
+  medium = false;
 }
 
 overlay2.addEventListener("click", () => {
@@ -509,6 +510,12 @@ function closeModal(modal) {
   largeButton2.style.background = "";
   mediumButton.style.background = "";
   largeButton.style.background = "";
+  medium = false;
+  small = false; 
+  large = false;
+  medium2 = false;
+  small2 = false; 
+  large2 = false;
 }
 
   // info2.innerHTML = largeInfo.replace(/\n/g, "<br>");
