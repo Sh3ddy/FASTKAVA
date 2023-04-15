@@ -5121,32 +5121,32 @@ span {
 }
 
 .calc_inp::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-  color: white;
+  color: white !important;
 }
 .calc_inp:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  color: white;
+  color: white !important;
   opacity: 1;
 }
 .calc_inp::-moz-placeholder { /* Mozilla Firefox 19+ */
-  color: white;
+  color: white !important;
   opacity: 1;
 }
 .calc_inp:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: white;
+  color: white !important;
 }
 
 
 .calc_inp2::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-  color: white;
+  color: white !important;
 }
 .calc_inp2:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  color: white;
+  color: white !important;
   opacity: 1;
 }
 .calc_inp2::-moz-placeholder { /* Mozilla Firefox 19+ */
-  color: white;
+  color: white !important;
   opacity: 1;
 }
 .calc_inp2:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: white;
+  color: white !important;
 }
