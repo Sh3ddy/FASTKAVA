@@ -35,24 +35,6 @@ span {
   margin-left: auto;
 }
 
-input::-webkit-input-placeholder { /* для Chrome, Firefox, Opera, Safari */
-  color: white;
-}
-
-input::-moz-placeholder { /* для Firefox */
-  color: white;
-}
-
-input:-ms-input-placeholder { /* для IE 10+ */
-  color: white;
-}
-
-input:-moz-placeholder { /* для Mozilla Firefox 4 до 18 */
-  color: white;
-}
-input::placeholder {
-  color: #fff !important;
-}
 @media only screen and (max-width: 767px) {
   .map {
     margin: 130px 0 100px 0;
@@ -1100,6 +1082,15 @@ input::placeholder {
     line-height: 125%;
     letter-spacing: 0.1em;
   }
+
+  .calc_inp::placeholder {
+    color: #fff !important;
+  }
+
+  .calc_inp2::placeholder {
+    color: #fff !important;
+  }
+
   .calc_inp2 {
     border: none;
     color: white;
@@ -1710,6 +1701,13 @@ input::placeholder {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .calc_inp::placeholder {
+    color: #fff !important;
+  }
+
+  .calc_inp2::placeholder {
+    color: #fff !important;
+  }
   .map {
     margin: 130px 0 100px 0;
   }
@@ -3390,6 +3388,13 @@ input::placeholder {
 }
 
 @media only screen and (min-width: 992px) {
+  .calc_inp::placeholder {
+    color: #fff !important;
+  }
+
+  .calc_inp2::placeholder {
+    color: #fff !important;
+  }
   .map {
     margin: 100px 0 100px 0;
   }
@@ -5115,7 +5120,3 @@ input::placeholder {
   }
 }
 
-
-#nav5 {
-  transition-duration: 0.5s; /* анимация длится 0.5 секунды */
-}
