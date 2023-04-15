@@ -96,15 +96,27 @@ input::placeholder {
   }
 
   .map_number {
+    position: relative;
     font-style: normal;
     font-weight: 600;
     font-size: 35px;
     color: #f38d0c;
+    text-shadow:
+    0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 5px #fff,
+    0 0 11px #f38d0c,
+    0 0 20px #f38d0c,
+    0 0 30px #f38d0c,
+    0 0 55px #f38d0c,
+    0 0 80px #f38d0c;
     line-height: 1;
     text-decoration: none;
     margin: 0px;
     font-family: "Montserrat";
   }
+
+
 
   .map_subtitle {
     font-style: normal;
@@ -1743,6 +1755,7 @@ input::placeholder {
     font-weight: 600;
     font-size: 60px;
     color: #f38d0c;
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #fff, 0 0 11px #f38d0c, 0 0 20px #f38d0c, 0 0 30px #f38d0c, 0 0 55px #f38d0c, 0 0 80px #f38d0c;
     line-height: 1;
     text-decoration: none;
     margin: 0px;
@@ -3378,7 +3391,7 @@ input::placeholder {
 
 @media only screen and (min-width: 992px) {
   .map {
-    margin: 130px 0 100px 0;
+    margin: 100px 0 100px 0;
   }
 
   .map_deteil {
@@ -3403,7 +3416,7 @@ input::placeholder {
     color: var(--white-color);
     line-height: 1;
     text-decoration: none;
-    margin: 20px;
+    margin-bottom: 20px;
     font-family: "Montserrat";
   }
 
@@ -3422,6 +3435,7 @@ input::placeholder {
     font-weight: 600;
     font-size: 75px;
     color: #f38d0c;
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #fff, 0 0 11px #f38d0c, 0 0 20px #f38d0c, 0 0 30px #f38d0c, 0 0 55px #f38d0c, 0 0 80px #f38d0c;
     line-height: 1;
     text-decoration: none;
     margin: 0px;
@@ -3435,7 +3449,7 @@ input::placeholder {
     color: var(--white-color);
     line-height: 1;
     text-decoration: none;
-    margin: 20px;
+    margin-top: 20px;
     font-family: "Montserrat";
   }
 
