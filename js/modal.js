@@ -11,6 +11,7 @@ const premiumButton = document.getElementById("premium-button");
 const smallButton = document.getElementById("small-button");
 const mediumButton = document.getElementById("medium-button");
 const largeButton = document.getElementById("large-button");
+const zenButton = document.getElementById("zen-button");
 const priceTag = document.getElementById("price-tag");
 const image = document.getElementById("image");
 const info = document.getElementById("info");
@@ -19,6 +20,7 @@ const premiumButton2 = document.getElementById("premium-button2");
 const smallButton2 = document.getElementById("small-button2");
 const mediumButton2 = document.getElementById("medium-button2");
 const largeButton2 = document.getElementById("large-button2");
+const zenButton2 = document.getElementById("zen-button2");
 const priceTag2 = document.getElementById("price-tag2");
 const image2 = document.getElementById("image2");
 const info2 = document.getElementById("info-text");
@@ -33,17 +35,21 @@ overlay2.addEventListener("click", () => {
 let small = false
 let medium = false
 let large = false
+let zen = false
 let small2 = false
 let medium2 = false
 let large2 = false
+let zen2 = false
 let IsPremium = false;
 let IsPremium2 = false;
 let priceSmall = 5000;
 let priceMedium = 6000;
 let priceLarge = 7000;
+let priceZen = 6850;
 let priceSmall2 = 7000;
 let priceMedium2 = 8000;
 let priceLarge2 = 9000;
+let priceZen2 = 8850;
 let smallInfo =
 `⁃ Допомога у пошуку локації 
 ⁃ Фірмовий дизайн з індивідуальним LED підсвічуванням 
@@ -86,6 +92,24 @@ let largeInfo =
 ⁃ Повноцінна стійка самообслуговування 
 ⁃ Veiding система 
 ⁃ Кавомашина преміум класу від іспанського виробника Azkoyen 
+⁃ Фірмовий дизайн з підсвічуванням 
+⁃ Постачання всіх інгредієнтів за найнижчою ціною ринку 
+⁃ Підтримка 24/7 
+⁃ Індивідуальний органайзер для сиропів та розхідників 
+⁃ Металопластикова стійка з підігрівом води 
+⁃ Охоронна система Ajax 
+⁃ Електронні замки 
+⁃ Допомога у розкрутці вашої точки 
+⁃ Встановлення кавярні і повне налаштування`;
+let zenInfo =
+`⁃ Допомога у пошуку локації 
+⁃ Фірмовий дизайн з індивідуальним LED підсвічуванням 
+⁃ Доступ до бази знань 
+⁃ Маркетингові інструменти 
+⁃ Повноцінна стійка самообслуговування 
+⁃ Veiding система 
+<span class="my-class"> ⁃ Кавомашина преміум класу від іспанського виробника Azkoyen з випадаючими стаканчиками та дозуванням цукру </span>
+<span class="my-class"> ⁃ Особистий монетоприймач </span>
 ⁃ Фірмовий дизайн з підсвічуванням 
 ⁃ Постачання всіх інгредієнтів за найнижчою ціною ринку 
 ⁃ Підтримка 24/7 
@@ -197,6 +221,9 @@ standardButton.addEventListener("click", () => {
   if(large == true){
     priceTag.textContent = `${priceLarge}$`;
   }
+  if(zen == true){
+    priceTag.textContent = `${priceZen}$`;
+  }
   standardButton.style.background = "linear-gradient(0deg, #FF8801 0%, #FF5014 100%)";
   premiumButton.style.background = "";
   let testText =
@@ -229,6 +256,9 @@ standardButton2.addEventListener("click", () => {
   if(large2 == true){
     priceTag2.textContent = `${priceLarge2}$`;
   }
+  if(zen2 == true){
+    priceTag.textContent = `${priceZen2}$`;
+  }
   standardButton2.style.background = "linear-gradient(0deg, #FF8801 0%, #FF5014 100%)";
   premiumButton2.style.background = "";
   // smallButton2.style.background = "linear-gradient(0deg, #FF8801 0%, #FF5014 100%)";
@@ -259,6 +289,8 @@ premiumButton.addEventListener("click", () => {
     priceTag.textContent = `${priceSmall + 500}$`;
   }else if(large == true){
     priceTag.textContent = `${priceLarge + 500}$`;
+  }else if(zen == true){
+    priceTag.textContent = `${priceZen + 500}$`;
   }
   let testText =
       `⁃ Допомога у пошуку локації 
@@ -300,6 +332,8 @@ premiumButton2.addEventListener("click", () => {
     priceTag2.textContent = `${priceSmall2 + 500}$`;
   }else if(large2 == true){
     priceTag2.textContent = `${priceLarge2 + 500}$`;
+  }else if(zen2 == true){
+    priceTag.textContent = `${priceZen2 + 500}$`;
   }
   standardButton2.style.background = "";
   premiumButton2.style.background = "linear-gradient(0deg, #FF8801 0%, #FF5014 100%)";
@@ -328,15 +362,17 @@ premiumButton2.addEventListener("click", () => {
   <span class="my-class"> ⁃ Промоутер </span>`;
   info2.innerHTML = testText.replace(/\n/g, "<br>") + PremiumInfo.replace(/\n/g, "<br>");
 });
-
 largeButton2.addEventListener("click", LargeClick2);
+zenButton2.addEventListener("click", ZenClick2);
 smallButton.addEventListener("click", () => {
   smallButton.style.background = "linear-gradient(0deg, #FF8801 0%, #FF5014 100%)";
   mediumButton.style.background = "";
   largeButton.style.background = "";
+  zenButton.style.background = "";
   medium = false
   small = true
   large = false
+  zen = false
   image.src = "img/1size.png";
   if (IsPremium) {
     priceTag.textContent = `${priceSmall + 500}$`;
@@ -351,10 +387,12 @@ mediumButton.addEventListener("click", () => {
   medium = true
   small = false
   large = false
+  zen = false
   smallButton.style.background = "";
   mediumButton.style.background = "linear-gradient(0deg, #FF8801 0%, #FF5014 100%)";
   largeButton.style.background = "";
   smallButton.style.background = "";
+  zenButton.style.background = "";
   if (IsPremium) {
     priceTag.textContent = `${priceMedium + 500}$`;
     info.innerHTML = mediumInfo + PremiumInfo.replace(/\n/g, "<br>");
@@ -369,9 +407,11 @@ largeButton.addEventListener("click", () => {
   large = true
   small = false 
   medium = false
+  zen = false
   smallButton.style.background = "";
   mediumButton.style.background = "";
   largeButton.style.background = "linear-gradient(0deg, #FF8801 0%, #FF5014 100%)";
+  zenButton.style.background = "";
   if (IsPremium) {
     priceTag.textContent = `${priceLarge + 500}$`;
     info.innerHTML = largeInfo + PremiumInfo.replace(/\n/g, "<br>");
@@ -381,11 +421,31 @@ largeButton.addEventListener("click", () => {
     info.innerHTML = largeInfo.replace(/\n/g, "<br>");
   }
 });
+zenButton.addEventListener("click", () => {
+  image.src = "img/zeo.png";
+  zen = true
+  small = false 
+  medium = false
+  large = false
+  smallButton.style.background = "";
+  mediumButton.style.background = "";
+  largeButton.style.background = "";
+  zenButton.style.background = "linear-gradient(0deg, #FF8801 0%, #FF5014 100%)";
+  if (IsPremium) {
+    priceTag.textContent = `${priceZen + 500}$`;
+    info.innerHTML = zenInfo + PremiumInfo.replace(/\n/g, "<br>");
+  } else {
+    priceTag.textContent = `${priceZen}$`;
+
+    info.innerHTML = zenInfo.replace(/\n/g, "<br>");
+  }
+});
 smallButton2.addEventListener("click", () => {
   image2.src = "img/1size.png";
   smallButton2.style.background = "linear-gradient(0deg, #FF8801 0%, #FF5014 100%)";
   mediumButton2.style.background = "";
   largeButton2.style.background = "";
+  zenButton2.style.background = "";
   medium2 = false
   small2 = true
   large2 = false
@@ -412,6 +472,7 @@ mediumButton2.addEventListener("click", () => {
   smallButton2.style.background = "";
   mediumButton2.style.background = "linear-gradient(0deg, #FF8801 0%, #FF5014 100%)";
   largeButton2.style.background = "";
+  zenButton2.style.background = "";
   medium2 = true
   small2 = false
   large2 = false
@@ -438,6 +499,7 @@ largeButton2.addEventListener("click", () => {
   smallButton2.style.background = "";
   mediumButton2.style.background = "";
   largeButton2.style.background = "linear-gradient(0deg, #FF8801 0%, #FF5014 100%)";
+  zenButton2.style.background = "";
   image2.src = "img/size3.png";
   medium2 = false
   small2 = false
@@ -460,6 +522,37 @@ largeButton2.addEventListener("click", () => {
     LargeClick();
   });
 });
+
+zenButton2.addEventListener("click", () => {
+  smallButton2.style.background = "";
+  smallButton2.style.background = "";
+  mediumButton2.style.background = "";
+  largeButton2.style.background = "";
+  zenButton2.style.background = "linear-gradient(0deg, #FF8801 0%, #FF5014 100%)";
+  image2.src = "img/Zen.png";
+  medium2 = false
+  small2 = false
+  large2 = false
+  zen2 = true
+  if (IsPremium2) {
+    priceTag2.textContent = `${priceLarge2 + 500}$`;
+    // info2.innerHTML = largeInfo + PremiumInfo.replace(/\n/g, "<br>");
+  } else {
+    priceTag2.textContent = `${priceLarge2}$`;
+
+    // info2.innerHTML = largeInfo.replace(/\n/g, "<br>");
+  }
+  standardButton2.addEventListener("click", () => {
+    IsPremium2 = false;
+    LargeClick();
+  });
+  premiumButton2.addEventListener("click", () => {
+    IsPremium2 = true;
+    // info2.innerHTML = largeInfo.replace(/\n/g, "<br>");
+    LargeClick();
+  });
+});
+
 permButton.addEventListener("click", () => {
   closeModal(modal);
   closeModal(modalChoose);
@@ -482,6 +575,8 @@ function closeModal(modal) {
   largeButton2.style.background = "";
   mediumButton.style.background = "";
   largeButton.style.background = "";
+  zenButton.style.background = "";
+  zenButton2.style.background = "";
   medium = false;
 }
 
@@ -510,12 +605,15 @@ function closeModal(modal) {
   largeButton2.style.background = "";
   mediumButton.style.background = "";
   largeButton.style.background = "";
+  zenButton.style.background = "";
   medium = false;
   small = false; 
   large = false;
+  zen = false;
   medium2 = false;
   small2 = false; 
   large2 = false;
+  zen2 = false;
 }
 
   // info2.innerHTML = largeInfo.replace(/\n/g, "<br>");
@@ -557,6 +655,19 @@ function closeModal(modal) {
       // info2.innerHTML = largeInfo.replace(/\n/g, "<br>");
     }
   }
+  function ZenClick() {
+    image.src = "img/zeo.png";
+    if (IsPremium) {
+      priceTag.textContent = `${priceZen + 500}$`;
+      // info2.innerHTML = largeInfo.replace(/\n/g, "<br>");
+      info.innerHTML = zenInfo + PremiumInfo.replace(/\n/g, "<br>");
+    } else {
+      priceTag.textContent = `${priceZen}$`;
+  
+      info.innerHTML = zenInfo.replace(/\n/g, "<br>");
+      // info2.innerHTML = largeInfo.replace(/\n/g, "<br>");
+    }
+  }
   function SmallClick2() {
     image2.src = "img/1size.png";
     if (IsPremium2) {
@@ -589,6 +700,18 @@ function closeModal(modal) {
       // info2.innerHTML = largeInfo.replace(/\n/g, "<br>");
     } else {
       priceTag2.textContent = `${priceLarge2}$`;
+  
+      // info2.innerHTML = largeInfo.replace(/\n/g, "<br>");
+    }
+  }
+  function ZenClick2() {
+    image2.src = "img/zeo.png";
+    if (IsPremium2) {
+      priceTag2.textContent = `${priceZen2 + 500}$`;
+      // info2.innerHTML = largeInfo + PremiumInfo.replace(/\n/g, "<br>");
+      // info2.innerHTML = largeInfo.replace(/\n/g, "<br>");
+    } else {
+      priceTag2.textContent = `${priceZen2}$`;
   
       // info2.innerHTML = largeInfo.replace(/\n/g, "<br>");
     }
