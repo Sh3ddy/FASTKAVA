@@ -33,9 +33,9 @@ function calculateProfit() {
   let allprofit = cafes * drinks * 30 * months * 30;
   let profit = allprofit - 500 - allprofit * 0.381 - 2500 - 1400;
 
-  document.getElementById("expense1").value = 2500 * months;
-  document.getElementById("expense2").value = 200 * months;
-  document.getElementById("expense3").value = 1200 * months;
+  document.getElementById("expense1").value = 2500 * months * cafes;
+  document.getElementById("expense2").value = 200 * months * cafes;
+  document.getElementById("expense3").value = 1200 * months * cafes;
 
   document.getElementById("expense").value = Math.round(allprofit * 0.381, 0);
   document.getElementById("profit").value = Math.round(profit, 0);
